@@ -6,6 +6,7 @@ ruby "3.1.1"
 gem "devise"
 gem "sass-rails"
 gem "jquery-rails"
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.2", "= 7.0.2.2"
 
