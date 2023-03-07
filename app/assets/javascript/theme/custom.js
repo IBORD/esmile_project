@@ -1,5 +1,4 @@
 $(function(){
-
     var subElementArray = $.map($('.sub-element'), function(el) { return $(el).text(); });    
     $(".element").typed({
         strings: subElementArray,
@@ -9,13 +8,11 @@ $(function(){
         loop: true,
         loopCount: true,
     });
-
     $('.templatemo-nav').singlePageNav({
         offset: $(".templatemo-nav").height(),
         filter: ':not(.external)',
         updateHash: false
     });
-
     $(window).scroll(function(){
         if($(this).scrollTop()>58){
             $(".templatemo-nav").addClass("sticky");
@@ -24,16 +21,12 @@ $(function(){
             $(".templatemo-nav").removeClass("sticky");
         }
     });
-
     $('.navbar-collapse a').click(function(){
         $(".navbar-collapse").collapse('hide');
     });
-
     $('body').bind('touchstart', function() {});
-
     new WOW().init();
 });
-
 $(window).load(function(){
 	$('.preloader').fadeOut(1000);
 });

@@ -1,9 +1,3 @@
-/*
-Awesome Template
-http://www.templatemo.com/preview/templatemo_450_awesome
-background: #303030;
-*/
-
 body
 	{
  		background: #303030;
@@ -16,12 +10,9 @@ body
 a {
 	color: #47C6F8;
 }
-	
 a:hover {
 	color: #0FF;
 }
-
-/* start h2 */
 h2
 	{
 		text-align: center;
@@ -33,17 +24,12 @@ h2 span
 		color: #28a7e9;
 		font-weight: bold;
 	}
-/* end h2 */
-
-/* start about team service portfolio contact */
 #about, #team, #service,
 #portfolio, #contact
 	{
 		padding-top: 60px;
 		padding-bottom: 40px;
 	}
-/* end about team service portfolio contact */
-/* start preloader */
 .preloader
 	{
 		position: fixed;
@@ -124,9 +110,6 @@ h2 span
   20% {
             -webkit-transform: scaleY(1);
                     transform: scaleY(1); } }
-/* end preloader */
-
-/* start header */
 header
 	{
 		min-height: 20px;
@@ -160,9 +143,6 @@ header .social-icon li a
 		line-height: 20px;
 		text-align: center;
 	}
-/* end header */
-
-/* start nagivation */
 .navbar-default
 	{
 		background: #fff;
@@ -185,7 +165,6 @@ header .social-icon li a
 		height: 70px;
 		line-height: 40px;
 	}
-
 .navbar-default .navbar-nav > li > a.current { 
 	color: #28A7E9;
 }
@@ -199,9 +178,6 @@ header .social-icon li a
 	left: 0;
 	top: 0;	
 }
-/* end navigation */
-
-/* start home */
 #home
 	{
 		background: url('/assets/home-bg.jpg') no-repeat;
@@ -244,9 +220,6 @@ header .social-icon li a
 	height: 60px;
 	font-size: 16px;
 }
-/* end home */
-
-/* start about */
 #about .media-heading-wrapper
 	{
 		padding-bottom: 32px;
@@ -271,9 +244,6 @@ header .social-icon li a
 		padding-top: 20px;
 		padding-left: 52px;
 	}
-/* end about */
-
-/* start team */
 #team .team-wrapper
 	{
 		background: #404040;
@@ -299,9 +269,6 @@ header .social-icon li a
 		font-weight: bold;
 		padding-bottom: 12px;
 	}
-/* end team */
-
-/* start service */
 #service .col-md-4
 	{
 		padding: 40px;
@@ -335,9 +302,6 @@ header .social-icon li a
 		padding-top: 10px;
 		padding-bottom: 14px;
 	}
-/* end service */
-
-/* start portfolio */
 #portfolio
 	{
 		padding-bottom: 80px;
@@ -391,9 +355,6 @@ header .social-icon li a
 		cursor: pointer;
 		opacity: 0.8;
 	}
-/* end portfolio */
-
-/* start contact */
 #contact
 	{
 		background: #202020;
@@ -454,9 +415,6 @@ header .social-icon li a
 		margin-right: 10px;
 		margin-bottom: 10px;
 	}
-/* end contact */
-
-/* start copyright */
 #copyright
 	{
 		padding: 20px;
@@ -465,9 +423,6 @@ header .social-icon li a
 	{
 		font-weight: 400;
 	}
-/* end copyright */
-
-/* start social icon */
 .social-icon
 	{
 		position: relative;
@@ -503,15 +458,11 @@ header .social-icon li a
 		background: #28a7e9;
 		border-color: transparent;
 	}
-/* end social icon */
-
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
 	#portfolio .portfolio-thumb .portfolio-overlay {
 		padding: 0px 8px;
 	}
 }
-
-/* start 980 media quires */
 @media only screen and ( max-width: 980px ) {
 	#team .team-wrapper
 		{
@@ -534,9 +485,6 @@ header .social-icon li a
 	}
 
 }
-/* end 360 media quires */
-
-/* start 768 media quires */
 @media only screen and ( max-width: 767px ) {
 	#home
 		{
@@ -573,9 +521,6 @@ header .social-icon li a
 		line-height: 35px;
 	}
 }
-/* end 768 media quires */
-
-/* start 360 media quires */
 @media only screen and ( max-width: 360px ) {
 	header .social-icon
 		{
@@ -593,4 +538,3 @@ header .social-icon li a
 		}
 
 }
-/* end 360 media quires */
