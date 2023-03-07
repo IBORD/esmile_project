@@ -8,9 +8,15 @@ Bundler.require(*Rails.groups)
 
 module EsmileProject
   class Application < Rails::Application
-
+    # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
-    config.secret_key_base = 'bfbb8bc4067d7f76069bfbc477249c5c'
 
+    # Configuration for the application, engines, and railties goes here.
+    #
+    # These settings can be overridden in specific environments using the files
+    # in config/environments, which are processed later.
+    #
+    # config.time_zone = "Central Time (US & Canada)"
+    # config.eager_load_paths << Rails.root.join("extras")
   end
 end

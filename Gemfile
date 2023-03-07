@@ -3,15 +3,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.1"
 
-gem "devise"
-gem "sass-rails"
-gem "jquery-rails"
-
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.2", "= 7.0.2.2"
+gem "rails", "~> 7.0.4", ">= 7.0.4.2"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
+
+# Use sqlite3 as the database for Active Record
+gem "sqlite3", "~> 1.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -21,7 +20,7 @@ gem "importmap-rails"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
-gem "turbolinks"
+
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
@@ -38,7 +37,7 @@ gem "jbuilder"
 # gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data"
+gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
@@ -52,9 +51,6 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
-
-  # Use sqlite3 as the database for Active Record
-  gem "sqlite3", "~> 1.4"
 end
 
 group :development do
@@ -76,17 +72,11 @@ group :test do
 end
 
 group :production do
-  gem 'pg'
-  gem 'activerecord-postgresql-adapter'
+gem 'pg'
+gem 'activerecord-postgresql-adapter'
 end
 
 group :actions do
   gem 'pg'
   gem 'activerecord-postgresql-adapter'
 end
-gem "tailwindcss-rails", "~> 2.0"
-
-gem "bootstrap-sass"
-gem "font-awesome-rails"
-gem "popper_js"
-gem 'rails-ujs'
